@@ -58,6 +58,7 @@ def main(cfg):
     if cfg.dataset is not None and cfg.data_idx is not None:
         target_str = load_target_str(cfg.dataset, cfg.data_idx, tokenizer)
         cfg.target_str = target_str
+        logging.info(f"Target string selected from dataset, cfg.targer_str: {cfg.target_str}")
 
     # Optimization setup
     optimization_args = {"discrete_optimizer": cfg.discrete_optimizer,
