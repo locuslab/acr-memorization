@@ -7,6 +7,11 @@ This repository contains the code needed to measure memorization in LLMs using i
 ## Getting Started
 
 ### Requirements
+This code was developed and tested with Python 3.10.4.
+
+To install requirements:
+
+```$ pip install -r requirements.txt```
 
 ### Optimizing Prompts
 
@@ -32,6 +37,9 @@ outputs
         ├── results.json
         └── log.log
 ```
+
+These output folders can be parsed and analyzed as a DataFrame using Pandas.
+Open the [analyze_results notebook](analyze_results.ipynb) to process experiments.
 
 ## Contributing
 
