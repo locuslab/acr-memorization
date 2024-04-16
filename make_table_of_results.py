@@ -33,6 +33,8 @@ df = pd.DataFrame(json_list)
 df = df.sort_values(by=["cfg_model_name", "cfg_dataset", "cfg_data_idx", "cfg_discrete_optimizer"])
 df["ratio"] = df["target_length"] / df["num_free_tokens"]
 df["memorized"] = df["ratio"] > 1
+print(df[["cfg_model_name", "cfg_dataset", "cfg_data_idx", "cfg_discrete_optimizer", "ratio", "memorized",
+          "success"]].round(2).to_markdown())
 
 # Make summary counting the average ratio and success rate for each dataset and discrete_optimizer include counts
 summary = df.groupby(["cfg_model_name", "cfg_dataset", "cfg_discrete_optimizer"]).agg(
