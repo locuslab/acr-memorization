@@ -11,25 +11,23 @@ hydra:
         filename: ${hydra.run.dir}/log.log
 
 batch_size: 100
-discrete_optimizer: gcg
-lr: 0.01
-model_name: microsoft/phi-1_5
-num_steps: 100
-optimizer: adam
-seed: 42
-topk: 250
-experiment_name: ${model_name}_${discrete_optimizer}_${lr}_${batch_size}_${num_steps}_${topk}_${seed}
-run_id: ${generate_id:}
-input_str: ''
-target_str: jumps over the lazy dog
-
 chat_template:
    - "<s>[INST] Give me a famous quote."
    - " [/INST]  Sure! Here's a famous "
-
-system_prompt: ""
-dataset:
 data_idx:
-random_weights: false
+dataset:
+discrete_optimizer: gcg
+experiment_name: ${model_name}_${discrete_optimizer}_${lr}_${batch_size}_${num_steps}_${topk}_${seed}
+input_str: ''
+lr: 0.01
 max_tokens: 30
 mini_batch_size: 100
+model_name: meta-llama/Llama-2-7b-chat-hf
+num_steps: 100
+optimizer: adam
+random_weights: false
+run_id: ${generate_id:}
+seed: 42
+system_prompt: ""
+target_str: jumps over the lazy dog
+topk: 250
