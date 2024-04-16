@@ -31,7 +31,7 @@ def minimize_prompt(model, tokenizer, input_str, target_str, system_prompt, chat
                                                                                                   device)
         if running_max == -1:
             running_max = (target_slice.stop - target_slice.start) * 5
-        elif optimization_args["discrete_optimizer"] == "gcg":
+        if optimization_args["discrete_optimizer"] == "gcg":
             solution = prompt_opt.optimize_gcg(model, input_ids, input_slice, free_token_slice, target_slice,
                                                loss_slice, optimization_args["num_steps"],
                                                batch_size=optimization_args["batch_size"],
