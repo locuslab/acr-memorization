@@ -22,7 +22,7 @@ To install requirements:
 ### Memorization Measurements
 
 ```
-% python miniprompt-main.py
+% python promptmin-main.py
 ```
 
 ### Logging Style and Data Analysis

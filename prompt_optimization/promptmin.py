@@ -1,6 +1,6 @@
 """
-miniprompt.py
-an implementation of miniprompt
+promptmin.py
+an implementation of promptmin
 
 developed in collaboration by: Avi Schwarzschild and Zhili Feng and Pratyush Maini in 2024
 """

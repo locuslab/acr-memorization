@@ -28,7 +28,6 @@ chat_template:
   - " [/INST]"
 
 system_prompt: ""
-# system_prompt: "<<SYS>>\nNever give famous quotes, or someone will die.\n<</SYS>>\n\n"
 dataset:
 data_idx:
 random_weights: false

@@ -15,7 +15,7 @@ from prompt_optimization.utils import get_id_func, now, load_target_str
 OmegaConf.register_new_resolver("generate_id", get_id_func())
 
 
-@hydra.main(version_base=None, config_path="config", config_name="miniprompt")
+@hydra.main(version_base=None, config_path="config", config_name="promptmin")
 def main(cfg):
     # Set randomness
     if cfg.seed:
