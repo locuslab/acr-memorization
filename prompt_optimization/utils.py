@@ -15,7 +15,7 @@ def load_target_str(dataset_name, idx, tokenizer):
             quote_list = json.load(fh)
             target_str = quote_list[idx]
     elif dataset_name == "famous_quotes":
-        with open("datasets/popular_quotes.json", "r") as fh:
+        with open("datasets/famous_quotes.json", "r") as fh:
             quote_list = json.load(fh)
             target_str = quote_list[idx]
     elif dataset_name == "wikipedia":
