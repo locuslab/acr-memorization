@@ -17,7 +17,7 @@ To install requirements:
 
 Try computing the compression ratio of the first sample in the [Famous Quotes](datasets/famous_quotes.json) dataset with the following command.  
 ```
-% python promptmin-main.py dataset=famous_quotes data_idx=0
+% python prompt-minimization-main.py dataset=famous_quotes data_idx=0
 ```
 
 ### Logging Style and Data Analysis
