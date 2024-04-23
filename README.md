@@ -48,4 +48,11 @@ We encourage anyone using the code to reachout to us directly and open issues an
 
 ## Citing Our Work
 
-
+```
+@article{schwarzschild2024rethinking,
+  title={Rethinking LLM Memorization Through the Lens of Adversarial Compression},
+  author={Schwarzschild, Avi and Feng, Zhili and Maini, Pratyush and Lipton, Zack and Kolter, Zico},
+  journal={arXiv preprint},
+  year={2024}
+}
+```
