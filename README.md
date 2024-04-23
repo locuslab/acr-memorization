@@ -35,7 +35,7 @@ outputs
 ```
 
 These output folders can be parsed and analyzed as a DataFrame using Pandas.
-Open the [analyze_results notebook](analyze_results.ipynb) to process experiments or run [make_table_of_results.py](make_table_of_results.py) to see parse the output folder. The notebook will load all the results into a Pandas DataFrame and then it can be edited (for example by adding cells) to to whatever analysis is needed. The script is a short Python script that will show you the set of experiment names, a table withe very entry, and a summary table aggregating accross (model, dataset, optimizer) groups. It can also be used with the flag `--experiment_name <experiment-name-0> <experiment-name-1>...` to aggregate results from any number of experiments.
+Open the [analyze_results notebook](analyze_results.ipynb) to process experiments or run [make_table_of_results.py](make_table_of_results.py) to see parse the output folder. The notebook will load all the results into a Pandas DataFrame and then it can be edited (for example by adding cells) to to whatever analysis is needed. The script is a short Python script that will show you the set of experiment names, a table with every entry, and a summary table aggregating across (model, dataset, optimizer) groups. It can also be used with the flag `--experiment_name <experiment-name-0> <experiment-name-1>...` to aggregate results from any number of experiments.
 
 ### Optimizing Prompts
 We include a simple script of optimizing input tokens to elicit a targeted output from an LLM. This is only one step in finding minimal prompts, but it may be helpful to see how prompt optimization can be done in general.
