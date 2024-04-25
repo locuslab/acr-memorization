@@ -1,8 +1,8 @@
 # Rethinking LLM Memorization through the Lens of Adversarial Compression
 
-A compression-based approach to defining and measuring memorization with LLMs.
+A compression-based approach to defining and measuring memorization with LLMs. 
 
-This repository contains the code needed to measure memorization in LLMs using input-output compression. It was developed collaboratively by Avi Schwarzschild, Zhili Feng, and Pratyush Maini at Carnegie Mellon University in 2024. This code is particularly useful for reproducing the results in our paper on the topic.
+This repository contains the code needed to measure memorization in LLMs using input-output compression. This method is presented in [our paper](https://arxiv.org/pdf/2404.15146). This repo was developed collaboratively by Avi Schwarzschild, Zhili Feng, and Pratyush Maini at Carnegie Mellon University in 2024. This code is particularly useful for reproducing the results in our paper on the topic.
 
 
 ## Getting Started
@@ -50,10 +50,12 @@ We encourage anyone using the code to reach out to us directly and open issues a
 ## Citing Our Work
 
 ```
-@article{schwarzschild2024rethinking,
-  title={Rethinking LLM Memorization Through the Lens of Adversarial Compression},
-  author={Schwarzschild, Avi and Feng, Zhili and Maini, Pratyush and Lipton, Zack and Kolter, Zico},
-  journal={arXiv preprint},
-  year={2024}
+@misc{schwarzschild2024rethinking,
+      title={Rethinking LLM Memorization through the Lens of Adversarial Compression}, 
+      author={Avi Schwarzschild and Zhili Feng and Pratyush Maini and Zachary C. Lipton and J. Zico Kolter},
+      year={2024},
+      eprint={2404.15146},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
 }
 ```
